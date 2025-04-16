@@ -16,7 +16,7 @@ class Game {
 
     Game() {
         Random r = new Random();
-        this.num = r.nextInt(10);
+        this.num = r.nextInt(100);
     }
 
     void takeUserInput() {
