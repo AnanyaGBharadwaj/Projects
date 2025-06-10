@@ -29,6 +29,7 @@ def prims(edge,v):
             vt.append(x)
             v.remove(x)
     return et
+    
 edge=[['a','b',5],['b','d',6],['c','d',4],['a','c',7],['a','e',2],['b','e',3],['d','e',5],['c','e',4]]
 vert=['a','b','c','d','e']
 st_edge=[]
