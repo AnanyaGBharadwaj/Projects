@@ -2,6 +2,7 @@ import random
 for i in range(1,5):
   x=random.randint(1,3)
   a=int(input("Enter numbers from 1 to 3\n"))
+  print("1 is for snake, 2 is for water, 3 is for gun")
   print("Computer chose",x)
   if a==x:
     print("Draw")
