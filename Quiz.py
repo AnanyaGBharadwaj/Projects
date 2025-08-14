@@ -25,4 +25,5 @@ print("Great! You completed the quiz")
 if money==0:
     print("Sorry! You won nothing. Better luck next time")
 else:
-    print("Congratulations!You won Rs.",money)
+    print("Congratulations! You won Rs.",money)
+
