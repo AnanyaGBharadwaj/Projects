@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>prog5</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:20px;
+background-color:#f9f9f9;
+background-image:
+   linear-gradient(to bottom,#ddd 1px,transparent 1px),
+   linear-gradient(to right,#ddd 1px,transparent 1px);
+background-size:40px 40px;
+}
+#output
+{
+margin-top:20px;
+padding:10px;
+background-color:rgba(255,255,255,0.9);
+border:2px solid #333;
+width:320px;
+}
+</style>
+</body>
+<h2>Click anywhere to see mouse position</h2>
+<div id="output">
+<p><b>Client coordinates</b>(x,y)</p>
+<p><b>Screen coordinates</b>(x,y)</p>
+</div>
+<script>
+document.addEventListener("click",function(event){
+const clientX=event.clientX;
+const clientY=event.clientY;
+const screenX=event.screenX;
+const screenY=event.screenY;
+document.getElementById("output").innerHTML=`
+<p><b>Client coordinates:</b>(${clientX},${clientY})</p>
+<p><b>Screen coordinates:</b>(${screenX},${screenY})</p>`;
+});
+</script>
+</body>
+</html>
+
+
+  
